@@ -1,0 +1,267 @@
+body{
+	box-sizing:border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin:0;
+}
+
+.grid-container{
+	display:grid;
+	grid-row-gap:10px;
+	grid-template-columns:10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+	margin:0;
+	background-color: black;
+}
+a{
+	text-decoration:none;
+	color:blue;
+}
+a:hover{
+	color:orange;
+}
+.grid-container > div {
+	padding-top: 20px;
+	}
+
+
+.logo{
+	grid-area:1/1/2/3;
+	background-color:black;
+
+}
+.search{
+	grid-area:1/3/2/7;
+	padding-left:20px;
+	border-radius:3px 2px;
+	background-color:black;
+}
+.acct-buttons{
+	grid-area:1/8/2/11;
+	padding-left:15%;
+	background-color:black;
+
+}
+#header{
+	grid-area:2/1/3/11;
+	background-image:url('images/banner.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	min-height:400px;
+}
+#login-banner{
+	grid-area:2/1/3/11;
+	background-image:url('images/banner2.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	min-height:400px;
+}
+#signup-banner{
+	grid-area:2/1/3/11;
+	background-image:url('images/banner3.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	min-height:400px;
+}
+#header > img{
+	width:100%;
+	height:auto;
+}
+.rightbar{
+	grid-area:2/7/3/10;
+	font-size:16px;
+	line-height:2em;
+}
+input[type=text],input[type=email],input[type=password],input[type=search]{
+	outline:none;
+	background-color:inherit;
+	border:none;
+	border-radius:3px;
+	border-bottom:2px solid dimgrey;
+	width:60%;
+	padding:2px;
+}
+input[type=search]{
+    -webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+input[type=email]:hover{
+	border-bottom:2px solid orange;
+}
+input[type=text]:hover{
+	border-bottom:2px solid orange;
+}
+input[type=password]:hover{
+	border-bottom:2px solid orange;
+}
+input[type=search]:hover{
+	border-bottom:2px solid orange;
+}
+
+input[type=search]:focus {
+	border-bottom:2px solid orange;
+    width: 100%;
+}
+input[type=submit]{
+	width:100%;
+	height:30px;
+	display:inline-block;
+	background-color:orange;
+	border-radius:5px;
+	outline:none;
+	border:none;
+}
+input[type=submit]:hover{
+	background-color:dimgrey
+}
+.sidebar{
+	grid-area:3/7/4/11;
+	background-color: gainsboro;
+	font-size:16px;
+	padding:10%;
+}
+.acct, .acct:hover{
+	color:black
+}
+
+#slogan{
+	font-weight:bold;
+	font-size: 35px;
+	color:orange;
+
+}
+.button, .userButton{
+	outline:none;
+	display:inline-block;
+	background-color:orange;
+	border:none;
+	text-align:center;
+	text-decoration:none;
+	font-size:15px;
+	width:20%;
+	border-radius:3px;
+}
+.userButton{
+	width:auto;
+}
+.text-block{
+	width:35%;
+	background-color:gainsboro;
+	display:inline-block;
+	margin:2px;
+	padding:2px 5px;
+}
+.main{
+	grid-area:3/1/4/7;
+	background-color: gainsboro;
+	font-size:18px;
+	text-align:center;
+	}
+.sub-main{
+	border-bottom:1px solid white;
+	margin-left:1%;
+}
+
+
+h3{
+	text-align:center;
+}
+.move-left{
+
+	left:0%;
+	width:20%;
+	float:left;
+}
+.move-center{
+
+	left:21%;
+	width:60%;
+	float:left;
+
+}
+.move-right{
+	left:81%;
+	right:10%;
+	width:20%;
+
+}
+.float-right{
+	float:right;
+}
+.section{
+	grid-area:3/1/4/11;
+	background-color:gainsboro;
+	padding:15px;
+	font-size:15px;
+}
+.footer{
+	grid-area:4/2/5/10;
+	color:orange;
+	background-color:black;
+	padding-bottom:20px;
+
+}
+.card-1{
+	grid-area:2/1/4/3;
+	border:1px solid black;
+}
+.user-main{
+	grid-area:2/3/4/7;
+	background-color: gainsboro;
+	padding:5%;
+}
+
+
+.container {
+	margin:20px 5px 0;
+	padding: 2px 16px;
+	color:gray;
+}
+#halfed{
+	margin:0;
+	min-height:40%;
+	background-color: gainsboro;
+}
+#halfed >img{
+	width:100%;
+}
+#text-left{
+	text-align:left;
+}
+#text-center{
+	text-align:center;
+}
+
+.user-sidebar{
+	grid-area:2/7/4/11;
+	background-color:gainsboro;
+	font-size:16px;
+	padding:10%;
+}
+.style-text{
+	border:none;
+	outline:none;
+	width:100%;
+	background-color:initial;
+	border-bottom:1px solid gray;
+}
+#holder{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+	width:50%
+}
+.voteup{
+	background-image:url('images/up.png');
+	width:30px;
+	height:20px;
+}
+.voteup:hover{
+	background-image: url('images/up-hover.png')
+}
+
+.votedown{
+	background-image: url('images/down.png')
+}
+.votedown:hover{
+	background-image:url('images/down-hover.png')
+}
