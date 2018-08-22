@@ -1,0 +1,490 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: gainsboro;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color:blue;
+}
+a:hover{
+  color:orange;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+.imp{
+  color:black;
+  font-size:18px;
+}
+
+
+p {
+  font-size: 3vw;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 0;
+  overflow: hidden;
+  background-color: orange;
+  border: none;
+}
+#askButton{
+  background-color:red;
+  font-size:2.5vw;
+  outline:none;
+  color:white;
+
+}
+#askButton:hover{
+  background-color:grey;
+}
+#num-questions,#num-answers{
+  font-weight:bolder;
+  font-size:25px;
+  color:red;
+  font-style:normal;
+}
+
+li {
+  float: left;
+  width: 33.3%
+}
+.centered:hover{
+  background-color: none;
+
+}
+
+li a {
+  display: block;
+  color: black;
+  font-size:2vw;
+  text-align: center;
+  padding: 6.5px 10px;
+  text-decoration: none;
+}
+
+.centered-link:hover {
+  background-color: gray;
+}
+
+h3 {
+  font-size: 3.5vw;
+  padding:10px;
+}
+
+input[type=text],input[type=email],input[type=password],input[type=search] {
+    outline: none;
+    background-color: inherit;
+    border: none;
+    border-radius: 3px;
+    border-bottom: 2px solid dimgrey;
+    width: 100%;
+    padding: 2px;
+}
+
+input[type=email]:hover {
+    border-bottom: 2px solid orange;
+}
+
+input[type=text]:hover {
+    border-bottom: 2px solid orange;
+}
+
+input[type=password]:hover {
+    border-bottom: 2px solid orange;
+}
+
+input[type=search]:hover {
+    border-bottom: 2px solid orange;
+}
+
+.submit {
+  margin: 5px;
+  width: 100%;
+  height: 30px;
+  font-size:20px;
+  display: inline-block;
+  background-color: orange;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color:black;
+}
+.text-block{
+  line-height:3em;
+}
+.submit:hover{
+  background-color:gray;
+}
+placeholder{
+  margin-bottom:30px;
+}
+
+section {
+  border-top: 2px solid black;
+  overflow: hidden;
+}
+
+footer {
+  background-color: black;
+}
+
+#logo {
+  background-color: black;
+  padding: 20px;
+  max-width:100%;
+}
+
+#logo img {
+    width: 70%;
+    padding-left:20%;
+}
+
+#home-banner {
+  background-image: url("images/banner-small.jpg")
+}
+
+#login-banner {
+  background-image: url("images/banner2-small.jpg")
+}
+
+#signup-banner {
+  background-image: url("images/banner3-small.jpg")
+}
+
+#slogan {
+  left:40%;
+  color: orange;
+  padding: 10% 8%;
+  font-size: 20px;
+  float:left;
+  font-weight: bold;
+}
+
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 200px;
+}
+
+form {
+  padding: 8% 5%;
+  font-size: 3vw;
+}
+
+.heading {
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+
+.main {
+  padding: 5% 5%;
+}
+
+.grey{
+  background-color: gray;
+}
+.questionId {
+  font-size: 3vw;
+}
+
+
+.halfed {
+  float: left;
+  width: 100%;
+  font-size: 2.5vw;
+  color: black;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.last {
+  border-bottom: none;
+}
+
+.answer-count {
+  color:black;
+  font-weight: bold;
+}
+
+.action{
+  color:black;
+  font-weight:bold;
+  text-align: center;
+  font-size:3.5vw;
+}
+
+.userId {
+  float: right;
+  padding: 0 5%;
+}
+
+.fullwidth {
+  padding: 10px 10px;
+  text-align: center;
+  display: block;
+  font-size: 4vw;
+  color: orange;
+}
+
+.float-right {
+  float: right;
+}
+
+.ask {
+  background-color: orange;
+  color: black;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 4vw;
+}
+.ask:hover{
+  background-color:orange;;
+}
+.user-bar {
+  margin: 0;
+  padding: 0 10%;
+  min-height: 40%;
+  background-color: black;
+}
+
+.user-bar > img {
+    width: 100%;
+}
+
+.card-1 {
+  background-color: gainsboro;
+  line-height: 2em;
+}
+
+.container {
+    margin: 20px 5px 0;
+    padding: 2px 16px;
+    color: black;
+}
+
+.question {
+  line-height: 2em;
+  overflow: hidden;
+}
+
+.user-action {
+display: inline-block;
+}
+.number{
+  display: block;
+  float: left;
+  font-style:italic;
+  text-align: center;
+  font-weight:bolder;
+  clear: both;
+}
+.bolder{
+  font-weight:bolder;
+}
+.text-align {
+  text-align: center;
+}
+
+.style-text {
+    border:none;
+    outline: none;
+    width: 100%;
+    background-color:white;
+    border-radius:5px;
+    padding:10px;
+    margin:1px;
+}
+.italize {
+  font-style:italic;
+}
+.border-bottom {
+  border-bottom:1px solid grey;
+  padding-bottom:10px;
+}
+.clear{
+  clear:both;
+}
+.center{
+  display:block;
+  min-width:100%;
+  margin-top:10px;
+}
+
+
+
+@media only screen and (max-width:600px) {
+  .left1,.middle1,.left2,.middle3{
+  display: none;
+  }
+}
+
+
+@media only screen and (min-width:601px){
+  .ask,h3,.action{
+    font-size:18px;
+  }
+  .questionId,p,form{
+    font-size:16px;
+  }
+  .halfed{
+    font-size:14px;
+  }
+  .user-bar{
+    padding:1% 25%;
+    border-top:2px solid orange;
+  }
+  .question{
+    line-height: 1.5em;
+    padding:15px 10px;
+    font-size:16px;
+  }
+ .user-bar >img{
+    width:100%;
+    height:30%;
+  }
+  nav {
+    right:5%;
+    position:absolute;
+    float:right;
+    top:20px;
+    font-size:16px;
+  }
+  ul{
+      background-color: inherit;
+  }
+  li{
+      width:auto;
+      padding:0;
+  }
+  .centered-link:hover{
+    background-color: inherit;
+  }
+  .centered-link  a:hover{
+    color:gray;
+  }
+  #askButton{
+    padding:5px 15px;
+    font-size:20px;
+  }
+  .banner{
+      min-height:400px;
+  }
+  #home-banner{
+      background-image: url("images/banner-meduim.jpg")
+  }
+  #login-banner{
+      background-image: url("images/banner2-meduim.jpg")
+  }
+  #signup-banner{
+      background-image: url("images/banner3-meduim.jpg")
+  }
+  li a{
+      color:orange;
+      font-size:18px;
+  }
+  #slogan{
+      font-size:35px;
+
+  }
+  #logo img{
+    padding-left:0;
+    width:30%;
+  }
+  .left-bar{
+      display:block;
+      width:60%;
+      float:left;
+      overflow:hidden;
+  }
+  .side-bar{
+  padding-top:2%;
+  }
+
+
+  .card-1{
+      width:40%;
+      display:inline-block;
+      min-height:100%
+  }
+  .container{
+      min-height:100%;
+  }
+  .middle,.left{
+      display:none;
+  }
+
+
+  .middle1{
+      float:right;
+      width:60%;
+      padding:2%;
+  }
+  .middle3{
+    width:100%;
+    padding:5%;
+  }
+  .answer-count{
+    font-size:16px;
+  }
+
+}
+@media only screen and (min-width:900px){
+  .banner{
+    min-height:400px;
+  }
+
+  #home-banner{
+      background-image: url("images/banner.jpg")
+  }
+  #login-banner{
+      background-image: url("images/banner2.jpg")
+  }
+  #signup-banner{
+      background-image: url("images/banner3.jpg")
+  }
+  #slogan{
+      font-size:40px;
+      padding:10% 5%;
+  }
+  #logo img{
+      width:25%;
+  }
+  .left,.middle{
+      display:none
+  }
+  .card-1{
+    width:30%;
+    float:left;
+    min-height:100%
+  }
+  .middle1{
+      display:inline-block;
+      width:70%;
+
+  }
+  .middle2{
+    float:left;
+    width:58%;
+  }
+  .left1{
+      width:38%;
+      float:right;
+
+  }
+
+
+}
