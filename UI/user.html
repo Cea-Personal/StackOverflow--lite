@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Stack Overflow Lite - Ask, Answer & Assist</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="home.html"><img src="images/logo.png"></a>
+      </div>
+      <nav>
+        <ul>
+          <li class="centered-link"><a href="index.html">Logout</a></li>
+          <li class="centered-link"><a href="user.html">View Profile</a></li>
+          <li class="centered-link"><a class="ask" id="askButton" href="questionnare.html">Ask</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="card-1">
+        <div class="user-bar">
+          <img src="images/avatar.png" alt="Avatar">
+        </div>
+        <p class="text-align"><a href="">Change Picture</a></p>
+        <div class="container">
+          <h4 class="heading"><b id="display-name">John Doe</b></h4>
+          <p class="heading" id="title">Developer and data scientist</p>
+          <div class="middle">
+            <div>
+              <h3 class="text-align">My Profile</h3>
+              <form class="border-bottom">
+                <span class="text-block">Display Name:</span><input type="text"placeholder="John Doe"><br>
+                <span class="text-block">Location:</span><input type="text" placeholder="Nigeria"><br>
+                <span class="text-block">Title:</span><input type="text" placeholder="Developer and data scientist"><br>
+                <span class="text-block">About Me:</span><br><textarea class="style-text"  rows="10" placeholder="Tell us about you"></textarea>
+                <br>
+                <input class="ask" type="submit" value="Save">
+                <input class="ask float-right "type="reset" value="cancel">
+              </form>
+            </div>
+          </div>
+          <div class="user-action">
+            <span class="number">Number of Questions asked:
+              <span class="answer-count" id="num-questions">65</span>
+            </span>
+            <span class="number">Number of Answers given:
+              <span class="answer-count" id="num-answers">70 </span>
+            </span>
+          </div>
+          <div>
+            <p class="bolder italize"><a class="imp" href="mostAnswered.html">Most Answered Questions</a></p>
+            <p class="bolder border-bottom italize"><a class="imp" href="recent.html">Recently Asked Questions</a></p>
+          </div>
+          <div class="left">
+            <h3 class="heading">Most Answered</h3>
+            <div class="main" >
+              <p class="questionId"><a href="question.html" class="questions">What does YOYO mean</a></p>
+              <div class="halfed"><span class="answer-count">1</span> Answers
+                <span class="userId">asked by <a class="italize" href="user.html">cea</a></span>
+              </div>
+            </div>
+            <div class="main" >
+              <p class="questionId"><a href="" class="questions">How can i become EPICAL</a></p>
+              <div class="halfed"><span class="answer-count">3</span> Answers
+                <span class="userId">asked by <a  class="italize"href="user.html">fejiro</a></span>
+              </div>
+            </div>
+            <div class="main" >
+              <p class="questionId"><a href="" class="questions">What is TIA</a></p>
+              <div class="halfed"><span class="answer-count">1</span> Answers
+                <span class="userId">asked by <a  class="italize"href="user.html">oluwatosin</a></span>
+              </div>
+            </div>
+            <div class="main" >
+              <p class="questionId"><a href="" class="questions">Fellowship or recruitment , which is better?</a></p>
+              <div class="halfed"><span class="answer-count">5</span> Answers
+                <span class="userId">asked by <a class="italize" href="user.html">ceasar</a></span>
+              </div>
+            </div>
+            <div class="main">
+              <p class="questionId"><a href="" class="questions">How many weeks is bootcamp</a></p>
+              <div class="halfed last"><span class="answer-count">2</span> Answers
+                <span class="userId">asked by <a  class="italize"href="user.html">ogols</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle1">
+        <div class="middle2">
+          <h3 class="text-align">My Profile</h3>
+          <form class="botrder-bottom">
+            <span class="text-block">Display Name:</span><input type="text"placeholder="John Doe"><br>
+            <span class="text-block">Location:</span><input type="text" placeholder="Nigeria"><br>
+            <span class="text-block">Title:</span><input type="text" placeholder="Developer and data scientist"><br>
+            <span class="text-block">About Me:</span><br><textarea class="style-text"  rows="10" placeholder="Tell us about you"></textarea>
+            <br>
+            <input class="ask" type="submit" value="Save">
+            <input class="ask float-right"type="reset" value="cancel">
+          </form>
+        </div>
+        <div class="left1">
+          <h3 class="heading">Most Answered</h3>
+          <div class="main" >
+            <p class="questionId"><a href="" class="questions">What does YOYO mean</a></p>
+            <div class="halfed"><span class="answer-count">1</span> Answers
+              <span class="userId">asked by <a class="italize" href="user.html">cea</a></span>
+            </div>
+          </div>
+          <div class="main" >
+            <p class="questionId"><a href="" class="questions">How can i become EPICAL</a></p>
+            <div class="halfed"><span class="answer-count">3</span> Answers
+              <span class="userId">asked by <a  class="italize"href="user.html">fejiro</a></span>
+            </div>
+          </div>
+          <div class="main" >
+            <p class="questionId"><a href="" class="questions">What is TIA</a></p>
+            <div class="halfed"><span class="answer-count">1</span> Answers
+              <span class="userId">asked by <a  class="italize"href="user.html">oluwatosin</a></span>
+            </div>
+          </div>
+          <div class="main" >
+            <p class="questionId"><a href="" class="questions">Fellowship or recruitment , which is better?</a></p>
+            <div class="halfed"><span class="answer-count">5</span> Answers
+              <span class="userId">asked by <a class="italize" href="user.html">ceasar</a></span>
+            </div>
+          </div>
+          <div class="main">
+            <p class="questionId"><a href="" class="questions">How many weeks is bootcamp</a></p>
+            <div class="halfed last"><span class="answer-count">2</span> Answers
+              <span class="userId">asked by <a  class="italize"href="user.html">ogols</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="fullwidth">
+        <p> Copyright &copy 2018. All Rights Reserved.</p>
+      </div>
+      <div class="fullwidth">
+        <p>Made in preparation for bootcamp</p>
+      </div>
+      <div class="fullwidth">
+        <p>Powered by CEA</p>
+      </div>
+    </footer>
+  </body>
+</html>
