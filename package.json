@@ -20,8 +20,8 @@
     "supertest": "^3.1.0"
   },
   "scripts": {
-    "test": "mocha test/test.js --compilers js:babel-register ",
-    "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
+    "test": "mocha server/test/test.js --compilers js:babel-register ",
+    "start": "node_modules/.bin/nodemon server/app.js --exec babel-node --"
   },
   "author": "",
   "license": "ISC"
