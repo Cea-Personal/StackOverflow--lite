@@ -54,4 +54,44 @@ export const postAQuestion=(req,res)=>{
     });
   };
 
+  export const postAnAnswer = (req,res) => {
+    const id = parseInt(req.params.id, 10);
+    questions.map((question) => {
+      if (question.id === id) {
+        if (!req.body.description) {
+          res.status(400).send({
+            success: 'false',
+            message: 'description is required'
+          });
+        } if (!req.body.author) {
+          res.status(400).send({
+            success: 'false',
+            message: 'author is required'
+          });
+        }
+        const answer = {
+          id: question.answers.length + 1,
+          description: req.body.description,
+          author: req.body.author
+        };
+        question.answers.push(answer);
+        return res.status(201).send({
+          success:'true',
+          message:'You added an answer',
+          answer
+        });
+    }
+      return res.status(404).send({
+        success:'false',
+        message:'question does not exist'
+
+      });
+
+  });
+}
+
+
+  // post answer for question endpiont
+
+
 
